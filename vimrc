@@ -31,7 +31,7 @@ filetype plugin indent on
 
 
 try
-    colorscheme dracula
+"    colorscheme dracula
 "     colorscheme gruvbox
 
 catch

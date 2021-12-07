@@ -41,6 +41,7 @@ fi
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 EXPORT SSH_AUTH_SOCK
 
+exec i3
 get_session(){
 	local dbus_args=(--sh-syntax --exit-with-session)
 	case $1 in
