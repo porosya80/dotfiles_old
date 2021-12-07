@@ -1,0 +1,20 @@
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.gitconfig: gitconfig
+    ~/.ssh/config:
+        path: ssh/config
+        create: true
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
+    ~/.i3:
+        path: i3/
+        create: true
+
+
