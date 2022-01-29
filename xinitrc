@@ -3,7 +3,8 @@
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
-
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --auto
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
