@@ -5,16 +5,19 @@ colors
 
 #export PATH=~/.local/bin:~/.bin:~/.local/lib:$PATH
 
-source <(antibody init)
-antibody bundle robbyrussell/oh-my-zsh path:plugins/z
-antibody bundle zsh-users/zsh-autosuggestions
-antibody bundle zsh-users/zsh-syntax-highlighting
-antibody bundle zsh-users/zsh-completions
-antibody bundle djui/alias-tips
+if [[ ! -f ~/.zpm/zpm.zsh ]]; then
+  git clone --recursive https://github.com/zpm-zsh/zpm ~/.zpm
+fi
+source ~/.zpm/zpm.zsh
+
+zpm load @omz
+zpm load @omz/z
+zpm load @omz/zsh-autosuggestions
+zpm load @omz/zsh-syntax-highlighting
+zpm load @omz/zsh-completions
+zpm load djui/alias-tips
   
   
-export TERMINAL='kitty'
-#export BROWSER='google-chrome'
 export TERM=xterm-256color
 export PIPENV_VERBOSITY=-1
 export EDITOR='vim'
